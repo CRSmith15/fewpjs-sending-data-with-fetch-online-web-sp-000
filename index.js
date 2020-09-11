@@ -8,7 +8,7 @@ function submitData(name, email){
     userData = {
       name: `${name}`,
       email: `${email}`
-    };
+    }
     body: JSON.stringify(userData)
   };
   fetch("http://localhost:3000/users", configObj)
